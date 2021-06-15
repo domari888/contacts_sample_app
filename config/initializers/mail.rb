@@ -3,7 +3,7 @@ if Rails.env.production?
   host = "contacts-sample-app-staging.herokuapp.com"
   # メール配信に失敗した場合にエラーを発生
   ActionMailer::Base.raise_delivery_errors = true
-  Actionmailer::Base.delivery_method = :smtp
+  ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     port: 587,
