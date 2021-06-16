@@ -1,4 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+# 送信元として表示するメールアドレスと表示名
+  default from: 'お問い合わせアプリ <mtk8macadmdvs@gmail.com>'
   layout 'mailer'
 end
