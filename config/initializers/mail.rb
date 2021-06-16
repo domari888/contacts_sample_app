@@ -1,6 +1,6 @@
 if Rails.env.production?
   # 各自ドメインを選択  (heroku domains で確認)
-  host = "contacts-sample-app-staging.herokuapp.com"
+  host = "contacts-sample-app.herokuapp.com"
   # メール配信に失敗した場合にエラーを発生
   ActionMailer::Base.raise_delivery_errors = true
   ActionMailer::Base.delivery_method = :smtp
